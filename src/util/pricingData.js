@@ -1,24 +1,27 @@
 // Stripe price IDs (replace with your real ones)
 export const STRIPE_PRICE_IDS = {
   monthly: {
-    professional: "price_1MONTHLY_PRO",
-    enterprise: "price_1MONTHLY_ENT",
+    Starter: "price_1Rl8T22fI2Ql9TPlriCMwJCQ",
+    Growth: "price_1Rl8Td2fI2Ql9TPlgWyDUQ6U",
+    Team: "price_1Rl8UC2fI2Ql9TPldGcUQPRt",
   },
   quarterly: {
-    professional: "price_1QUARTERLY_PRO",
-    enterprise: "price_1QUARTERLY_ENT",
+    Starter: "price_1Rl8VP2fI2Ql9TPlVhjgUQgi",
+    Growth: "price_1Rl8dL2fI2Ql9TPleIfyGIYc",
+    Team: "price_1Rl8ed2fI2Ql9TPlWj1vHefG",
   },
   yearly: {
-    professional: "price_1YEARLY_PRO",
-    enterprise: "price_1YEARLY_ENT",
+    Starter: "price_1Rl8W52fI2Ql9TPl2rij9RCM",
+    Growth: "price_1Rl8cr2fI2Ql9TPlEFJaT18O",
+    Team: "price_1Rl8fB2fI2Ql9TPlE0LDQPYK",
   },
 };
 
 export const PLAN_DATA = {
   monthly: [
     {
-      name: "Free",
-      price: 100,
+      name: "Starter",
+      price: 49.99,
       description:
         "Lorem ipsum dolor sit amet doloroli sitiol conse ctetur adipiscing elit.",
       features: [
@@ -31,11 +34,11 @@ export const PLAN_DATA = {
       cta: "Get started",
       highlight: false,
       disabled: false,
-      stripePriceId: import.meta.env.VITE_STRIPE_MONTHLY_PRICE_ID,
+      stripePriceId: STRIPE_PRICE_IDS.monthly.Starter,
     },
     {
-      name: "Professional",
-      price: 40,
+      name: "Growth",
+      price: 79.99,
       description:
         "Lorem ipsum dolor sit amet doloroli sitiol conse ctetur adipiscing elit.",
       features: [
@@ -50,11 +53,11 @@ export const PLAN_DATA = {
       cta: "Get started",
       highlight: true,
       disabled: false,
-      stripePriceId: STRIPE_PRICE_IDS.monthly.professional,
+      stripePriceId: STRIPE_PRICE_IDS.monthly.Growth,
     },
     {
-      name: "Enterprise",
-      price: 80,
+      name: "Team",
+      price: 109.99,
       description:
         "Lorem ipsum dolor sit amet doloroli sitiol conse ctetur adipiscing elit.",
       features: [
@@ -68,13 +71,13 @@ export const PLAN_DATA = {
       cta: "Get started",
       highlight: false,
       disabled: false,
-      stripePriceId: STRIPE_PRICE_IDS.monthly.enterprise,
+      stripePriceId: STRIPE_PRICE_IDS.monthly.Team,
     },
   ],
   quarterly: [
     {
-      name: "Free",
-      price: 0,
+      name: "Starter",
+      price: 139.99,
       description:
         "Lorem ipsum dolor sit amet doloroli sitiol conse ctetur adipiscing elit.",
       features: [
@@ -87,10 +90,11 @@ export const PLAN_DATA = {
       cta: "Get started",
       highlight: false,
       disabled: false,
+      stripePriceId: STRIPE_PRICE_IDS.quarterly.Starter,
     },
     {
-      name: "Professional",
-      price: 110,
+      name: "Growth",
+      price: 239.97,
       description:
         "Lorem ipsum dolor sit amet doloroli sitiol conse ctetur adipiscing elit.",
       features: [
@@ -105,11 +109,11 @@ export const PLAN_DATA = {
       cta: "Get started",
       highlight: true,
       disabled: false,
-      stripePriceId: STRIPE_PRICE_IDS.quarterly.professional,
+      stripePriceId: STRIPE_PRICE_IDS.quarterly.Growth,
     },
     {
-      name: "Enterprise",
-      price: 220,
+      name: "Team",
+      price: 329.99,
       description:
         "Lorem ipsum dolor sit amet doloroli sitiol conse ctetur adipiscing elit.",
       features: [
@@ -123,13 +127,13 @@ export const PLAN_DATA = {
       cta: "Get started",
       highlight: false,
       disabled: false,
-      stripePriceId: STRIPE_PRICE_IDS.quarterly.enterprise,
+      stripePriceId: STRIPE_PRICE_IDS.quarterly.Team,
     },
   ],
   yearly: [
     {
-      name: "Free",
-      price: 0,
+      name: "Starter",
+      price: 598.99,
       description:
         "Lorem ipsum dolor sit amet doloroli sitiol conse ctetur adipiscing elit.",
       features: [
@@ -142,10 +146,11 @@ export const PLAN_DATA = {
       cta: "Get started",
       highlight: false,
       disabled: false,
+      stripePriceId: STRIPE_PRICE_IDS.yearly.Starter,
     },
     {
-      name: "Professional",
-      price: 400,
+      name: "Growth",
+      price: 959.99,
       description:
         "Lorem ipsum dolor sit amet doloroli sitiol conse ctetur adipiscing elit.",
       features: [
@@ -160,11 +165,11 @@ export const PLAN_DATA = {
       cta: "Get started",
       highlight: true,
       disabled: false,
-      stripePriceId: STRIPE_PRICE_IDS.yearly.professional,
+      stripePriceId: STRIPE_PRICE_IDS.yearly.Growth,
     },
     {
-      name: "Enterprise",
-      price: 800,
+      name: "Team",
+      price: 1319.99,
       description:
         "Lorem ipsum dolor sit amet doloroli sitiol conse ctetur adipiscing elit.",
       features: [
@@ -178,7 +183,7 @@ export const PLAN_DATA = {
       cta: "Get started",
       highlight: false,
       disabled: false,
-      stripePriceId: STRIPE_PRICE_IDS.yearly.enterprise,
+      stripePriceId: STRIPE_PRICE_IDS.yearly.Team,
     },
   ],
 };

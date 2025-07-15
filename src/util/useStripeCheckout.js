@@ -3,7 +3,6 @@ import { loadStripe } from "@stripe/stripe-js";
 import { API_BASE } from "./constant";
 export const useStripeCheckout = () => {
   return useCallback(async ({ priceId, quantity }) => {
-    console.log("priceId and quantity", priceId, quantity);
     const res = await fetch(`${API_BASE}/api/stripe/create-checkout-session`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
